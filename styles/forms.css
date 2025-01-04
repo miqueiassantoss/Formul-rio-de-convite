@@ -1,5 +1,5 @@
 .main-container > h2{
-  margin-bottom: 40px;
+  margin-bottom: 6.25rem;
   font: var(--heading-md);
   color: var(--text-heading);
 }
@@ -37,7 +37,23 @@ label {
   border: 1px solid var(--input-stroke);
   border-radius: 8px;
   font: var(--body-md);
+  color: white;
 }
+
+
+.input-wrapper input:focus {
+  outline: none; /* Remove a linha de contorno */
+  border: 1px solid var(--brand-light); /* Borda visível */
+}
+
+.flex input:focus {
+  outline: none; /* Remove a linha de contorno */
+  border: 1px solid var(--brand-light); /* Borda visível */
+}
+
+
+
+
 
 input[type="text"]::placeholder {
   color: var(--input-placeholder);
@@ -52,12 +68,18 @@ input[type="text"]::placeholder {
   border-radius: 8px;
   font: var(--body-md);
   color: var(--input-placeholder);
+  text-transform: uppercase;
 }
 
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
 
 .description {
   margin-top: 16px;
 }
+
 
 .description > input {
   height: 8.5rem;

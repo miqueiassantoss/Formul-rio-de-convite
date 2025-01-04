@@ -16,86 +16,100 @@
 
     <div id="app">
 
-      <aside>
-        <div class="aside-container">
-          <div class="sub">
+      <aside class="aside-container">
+          <div class="content-container">
             <img  class="back-color" src="./assets/images/Logo.svg" alt="">
             <h1>Festivite</h1>
             <p>Crie um convite digital para o seu evento</p>
           </div>
           <img src="./assets/images/Background.png" />
-        </div>
       </aside>
 
 
       <main>
         <div class="main-container">
           <h2>Crie Seu convite</h2>
-          
             <form method="post">
-              <fieldset class="event">
-                <legend> 
+              <legend> 
                   <img src="./assets/icons/calendar.svg"   alt="calendário">
                   <span>Sobre o Evento</span>
-                </legend>
+              </legend>
 
-                <div class="input-wrapper">
+              <div class="input-wrapper">
                   <label for="event">Título</label>
                   <input type="text" placeholder="Nome do evento" id="event" name="event">
-                </div>
+              </div>
                 
-                <div class="flex">
+              <div class="flex">
                   <div class="flex-2">
-                    <label for="inicio">Início</label>
-                    <input type="datetime-local" form="inicio" name="inicio">
+                    <label for="begin">Início</label>
+                    <input id="begin" type="datetime-local" form="begin" name="begin"  min="2025-01-01T00:00" max="2030-12-31T23:59">
                   </div>
 
                   <div class="flex-1">
                     <label for="end">Fim</label>
-                    <input type="datetime-local" form="end" name="end">
+                    <input id="end" type="datetime-local" form="end" name="end" min="2025-01-01T00:00" max="2030-12-31T23:59">
                   </div>
-                </div>
+              </div>
 
-                <div class="flex">
+
+
+
+              <div class="flex">
+
                   <div class="flex-2">
                     <label for="inicio">Tipo</label>
-                    <input type="text" form="inicio" name="inicio">
-                  </div>
+
+                      <div class="toggle-box">
+                        <input type="radio" id="presencial" name="mode" value="presencial" checked>
+                        <label for="presencial" class="selected">
+                          
+                          <img src="./assets/icons/building.svg" alt="">
+                          <p>Presencial</p>
+                        </label>
+                        
+                        <input type="radio" id="online" name="mode" value="Online">
+                        <label for="online">
+                          <img src="./assets/icons/camera.svg" alt="">
+                          <p>Online</p>
+                        </label>
+                      </div>
+                </div>
+
+
+
 
                   <div class="flex-1">
                     <label for="inicio">Local</label>
                     <input type="text" form="inicio" name="inicio" placeholder="Link ou endereço">
                   </div>
-                </div>
+              </div>
 
-                <div class="description input-wrapper">
+              <div class="description input-wrapper">
                   <label for="description">Descrição</label>
                   <input type="text" placeholder="Escreva sobre os detalhes do evento">
-                </div>
+              </div>
 
                 
-                  <section>
-
-                    <label for="colors" class="custom">
+              <section>
+                <label for="colors" class="custom">
                       <img src="assets/icons/paintbrush.svg" alt="pincel">
                       <p>Personalização</p>
                       <p>Cor principal</p> 
-                    </label>
-
-                      <div id="colors-container">
-                          <div class="color blue"></div>
-                          <div class="color purple"></div>
-                          <div class="color lilac"></div>
-                          <div class="color pink"></div>
-                          <div class="color dark-pink"></div>
-                          <div class="color red"></div>
-                          <div class="color dark-orange"></div>
-                          <div class="color orange"></div>
-                          <div class="color yellow"></div>
-                          <div class="color light-green"></div>
-                      </div>
-                  </section>
-              </fieldset>
+                </label>
+                <div id="colors-container">
+                  <div class="color blue"></div>
+                  <div class="color purple"></div>
+                  <div class="color lilac"></div>
+                  <div class="color pink"></div>
+                  <div class="color dark-pink"></div>
+                  <div class="color red"></div>
+                  <div class="color dark-orange"></div>
+                  <div class="color orange"></div>
+                  <div class="color yellow"></div>
+                  <div class="color light-green"></div>
+                  </div>
+              </section>
             </form>
           </div>
       </main>

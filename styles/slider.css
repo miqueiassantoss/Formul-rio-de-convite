@@ -1,0 +1,47 @@
+.toggle-box {
+  margin-top: 12px;
+  display: flex;
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 48px;
+  padding: 3px;
+}
+
+.toggle-box input{
+  display: none;
+}
+
+.toggle-box label {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  gap: 8px;
+
+
+}
+
+.toggle-box input:checked + label {
+  background-color: #2D3136;
+  color: white;
+
+}
+
+
+
+.toggle-box label img {
+  filter: grayscale(100%); /* Ícones não selecionados ficam em escala de cinza */
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.toggle-box label.selected img {
+  filter: grayscale(0%); /* Remove o efeito de escala de cinza no ícone selecionado */
+  transform: scale(1.1); /* Opcional: aumenta o ícone selecionado */
+}
+
+

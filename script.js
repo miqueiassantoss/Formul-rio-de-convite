@@ -18,3 +18,13 @@ colorElements.forEach((color) => { //itera sobre cada bolinha, a cada iteração
 });
 
 
+document.querySelectorAll(".toggle-box input").forEach((input) => {
+  input.addEventListener("change", () => {
+    document.querySelectorAll(".toggle-box label").forEach((label) => {
+      label.classList.remove("selected"); // Remove a classe de todos
+    });
+    input.nextElementSibling.classList.add("selected"); // Adiciona ao selecionado
+  });
+});
+
+
