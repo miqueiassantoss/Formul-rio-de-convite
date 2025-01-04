@@ -1,0 +1,20 @@
+.aside-container {
+  position: relative;
+}
+
+.sub {
+  padding: 32px;
+  position: absolute;
+
+  img {
+  height: 45px !important;
+  width: 45px !important;
+  margin-bottom: 16px;
+  }
+
+  h1 {
+    font: var(--logo);
+    color: var(--pink);
+    margin-bottom: 5px;
+  }
+}
