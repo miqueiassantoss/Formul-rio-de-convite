@@ -18,6 +18,25 @@ colorElements.forEach((color) => { //itera sobre cada bolinha, a cada iteração
 });
 
 
+const themeFunction = document.querySelectorAll(".theme")
+themeFunction.forEach((theme) => {
+  theme.addEventListener("click", () => {
+    if (theme.classList.contains("card-checked")) {
+      theme.classList.remove("card-checked");
+    }
+
+    //Ao ser clicado, se tiver a classe, remova
+    else {
+      theme.classList.add("card-checked");
+    }
+  });
+});
+
+
+
+
+
+
 document.querySelectorAll(".toggle-box input").forEach((input) => {
   input.addEventListener("change", () => {
     document.querySelectorAll(".toggle-box label").forEach((label) => {
@@ -26,5 +45,9 @@ document.querySelectorAll(".toggle-box input").forEach((input) => {
     input.nextElementSibling.classList.add("selected"); // Adiciona ao selecionado
   });
 });
+
+
+
+
 
 

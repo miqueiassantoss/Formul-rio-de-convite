@@ -1,0 +1,63 @@
+#themes p {
+  margin-block: 38px 16px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-right: auto;
+}
+
+#themes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.theme {
+  width: 155px;
+  height: 120px;
+  padding: 4px 4px 8px;
+  justify-items: center; 
+  background-color: var(---shape-button);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  
+  cursor: pointer;
+  border: 1px solid #363B40;
+  
+  transition: 0.1s linear;
+
+  img {
+    width: 142px;
+  }
+
+  figcaption {
+    padding: 8px 4px;
+  }
+}
+
+.theme:hover {
+  background-color: var(--shape-hover);
+}
+
+
+.card-checked {
+  border: 2px solid var(--brand-light);
+}
+
+
+
+/* ThemeSelection */
+
+
+/* Auto layout 
+padding: 4px 4px 8px;
+gap: 8px;
+
+width: 134px;
+height: 103px;
+
+background: #2D3136;
+border-radius: 8px;
+
+/* Inside auto layout 
+flex: none;
+order: 3;
+flex-grow: 0; */

@@ -4,4 +4,5 @@
 @import url(forms.css);
 @import url(./fields/index.css);
 @import url(colors.css);
-@import url(slider.css)
+@import url(slider.css);
+@import url(theme.css);
