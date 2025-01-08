@@ -13,12 +13,14 @@ main {
   scrollbar-width: none;
   background-color: var(--shape-body);
   border-radius: 10px;
-
-  .main-container{
-    padding: 80px;
-  }
+  
 }
 
+.main-container{
+    max-width: 35rem;
+    margin: auto;
+    padding-block: 5rem;
+}
 
 
 

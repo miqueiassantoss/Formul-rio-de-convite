@@ -7,17 +7,16 @@
 
 #themes {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 134px);
+  gap: 8px;
 }
 
 .theme {
-  width: 155px;
-  height: 120px;
+  height: 103px;
   padding: 4px 4px 8px;
   justify-items: center; 
   background-color: var(---shape-button);
   border-radius: 8px;
-  margin-bottom: 10px;
   
   cursor: pointer;
   border: 1px solid #363B40;
@@ -25,7 +24,7 @@
   transition: 0.1s linear;
 
   img {
-    width: 142px;
+    width: 126px;
   }
 
   figcaption {

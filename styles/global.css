@@ -40,8 +40,8 @@
   --logo: 400 2.5rem 'leckerli one';
 
   --body-md: 500 1rem "open sans";
-  --body-sm: 500 0.8rem "open sans";
-  --body-xs: 500 0.75rem "open sans";
+  --body-sm: 500 0.875rem "open sans";
+  --body-xs: 500 0.875rem "open sans";
 }
 
 * {

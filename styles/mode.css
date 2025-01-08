@@ -1,0 +1,87 @@
+#mode {
+  margin-top: 1.75rem;
+  display: flex;
+  gap: 16px;
+
+  span {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  span:nth-child(1) {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* ESTILIZANDO BOTÃO */
+#style-mode{
+  width: 11rem;
+  height: 4.93rem;
+}
+
+
+.button {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+#style-mode input[type="checkbox"] {
+  appearance: none;
+  width: 62px;
+  height: 32px;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 20px;
+  position: relative;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+#style-mode input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 24px/2);
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--input-stroke);
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+#style-mode input[type="checkbox"]:checked {
+  background-color: var(--brand-light);
+  border: none;
+}
+
+#style-mode input[type="checkbox"]:checked::before {
+  transform: translateX(30px);
+}
+
+
+
+/* INPUT DE IMAGEM */
+#image-input {
+  background-color: white;
+  width: 23rem;
+  height: 4.93rem; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
