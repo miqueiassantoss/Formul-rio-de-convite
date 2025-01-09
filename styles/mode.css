@@ -68,20 +68,41 @@
 
 /* INPUT DE IMAGEM */
 #image-input {
-  background-color: white;
-  width: 23rem;
-  height: 4.93rem; 
+  display: grid;
+  grid-template-columns: 129px 247px;
+  grid-template-rows: 1fr 1fr;
+
+  span:nth-child(1) {
+    margin-bottom: 12px;
+    grid-row: 1/2;
+  }
+
+    span:nth-child(3) {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    align-self: center;
+    color: var(--input-placeholder);
+  }
 }
 
 
+#select {
+  grid-column: 1/2;
+  display: flex;
+  gap: 8px;
+  width: 119px; 
+  height: 40px; 
+  background-color: var(---shape-button);
+  border-radius: 8px;
+  padding: 12px;
+  transition: background-color 0.3s ease;
 
+  img {
+    height: 16px;
+    width: 16px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
+#select:hover {
+  background-color: var(--shape-hover);
+}

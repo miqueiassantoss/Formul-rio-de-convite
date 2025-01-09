@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
@@ -11,21 +11,21 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
-    <div id="app">
-      <aside class="aside-container">
+</head>
+<body>
+  <div id="app">
+    <aside class="aside-container">
           <div class="content-container">
             <img  class="back-color" src="./assets/images/Logo.svg" alt="">
             <h1>Festivite</h1>
             <p>Crie um convite digital para o seu evento</p>
           </div>
           <img src="./assets/images/Background.png" />
-      </aside>
-      <main>
-        <div class="main-container">
-          <h2>Crie Seu convite</h2>
-            <form method="post">
+    </aside>
+    <main>
+      <div class="main-container">
+        <h2>Crie Seu convite</h2>
+        <form method="post">
               <legend> 
                   <img src="./assets/icons/calendar.svg"   alt="calendário">
                   <span>Sobre o Evento</span>
@@ -106,9 +106,9 @@
                   <div class="color light-green"></div>
                   </div>
               </section>
-            </form>
+        </form>
 
-            <section id="themes">
+        <section id="themes">
               <p>Tema do evento</p>
 
               <figure class="theme">
@@ -171,32 +171,36 @@
                 <figcaption>Outro</figcaption>
               </figure>
 
-            </section>
+        </section>
 
-            <!-- FOCA DAQUI PRA BAIXO!!!!! -->
-            <section id="mode">
+        <!-- FOCA DAQUI PRA BAIXO!!!!! -->
+        <section id="mode">
 
-              <div id="style-mode">
-                <label for="toggle-button">
-                  <span>Estilo</span>
-                  <div class="button">
-                    <input type="checkbox" id="toggle-button">
-                    <span id="toggle-text">Escuro</span>
-                  </div>
-                </label>
+          <div id="style-mode">
+            <label for="toggle-button">
+              <span>Estilo</span>
+              <div class="button">
+                <input type="checkbox" id="toggle-button">
+                <span id="toggle-text">Escuro</span>
               </div>
-
-
-              <div id="image-input">
-                <label for="cover-upload">Foto de capa</label>
-                <input type="file" id="cover-upload" name="cover-upload" accept="images">
-              </div>
-            </section>
-
+            </label>
           </div>
-      </main>
 
 
-    <script src="script.js"></script>
+          <div id="image-input">
+              <span>Foto de capa</span>
+              <div id="select">
+                <img src="assets/icons/upload.svg">
+                <span>Selecionar</span>
+              </div>
+              <span>Nenhum arquivo selecionado</span>
+          </div>
+
+        </section>
+    </div>
+  </main>
+
+
+  <script src="script.js"></script>
   </body>
 </html>
