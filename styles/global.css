@@ -41,7 +41,7 @@
 
   --body-md: 500 1rem "open sans";
   --body-sm: 500 0.875rem "open sans";
-  --body-xs: 500 0.875rem "open sans";
+  --body-xs: 500 0.75rem "open sans";
 }
 
 * {
@@ -115,3 +115,14 @@ body {
 .light-blue {
   background-color: var(--cyan);
 }
+
+.hr {
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--input-stroke);
+  margin-block: 48px 40px;
+}
+
+
+
+

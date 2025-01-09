@@ -95,6 +95,7 @@
   background-color: var(---shape-button);
   border-radius: 8px;
   padding: 12px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 
   img {

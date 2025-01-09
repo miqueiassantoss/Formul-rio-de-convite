@@ -1,0 +1,33 @@
+#contact-details {
+  margin-top: 3rem;
+
+  span{
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  input {
+    margin-block: 12px 8px;
+  }
+
+  small {
+    display: flex;
+    color: var(--danger);
+    font: var(--body-xs);
+    gap: 8px;
+    img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  input[type="text"]{
+    border: 1px solid var(--danger);
+    outline: none;
+    color: white;
+  }
+}
+
+
+
+

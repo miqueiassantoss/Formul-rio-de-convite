@@ -173,7 +173,6 @@
 
         </section>
 
-        <!-- FOCA DAQUI PRA BAIXO!!!!! -->
         <section id="mode">
 
           <div id="style-mode">
@@ -195,8 +194,62 @@
               </div>
               <span>Nenhum arquivo selecionado</span>
           </div>
-
         </section>
+
+        <section id="contact-details">
+          <form action="POST">
+            <legend>
+              <img src="assets/icons/contact.svg">
+              <span>Dados para contato</span>
+            </legend>
+
+            <label for="name">
+              <span>Nome</span>
+              <input type="text" id="name" placeholder="Nome completo">
+              <small>
+                <img src="assets/icons/circle-alert.svg" alt="">
+                Campo obrigatório
+              </small>
+            </label>
+
+            <div class="flex">
+              <label for="mail" class="flex-1">
+                <span>E-mail</span>
+                <input type="email" name="mail" id="mail" placeholder="exemplo@gmail.com">
+              </label>
+              <label for="tel" class="flex-1">
+                <span>Telefone</span>
+                <input type="tel" placeholder="(99) 99999-9999">
+              </label>
+            </div>
+
+            <div class="hr"></div>
+
+            <fieldset id="terms">
+              <label for="terms1">
+                <input type="checkbox" id="terms1">
+                <img src="assets/icons/box-checked.svg" class="checkbox-icon">
+                <span>Li e concordo com os <strong>Termos e Condições</strong> e com a <strong>Política de Privacidade</strong></span>
+              </label>
+
+              <label for="email">
+                <input type="checkbox" id="email">
+                <img src="assets/icons/box-unchecked.svg" class="checkbox-icon">
+                <span>Aceito Receber atualizações e promoções por e-mail</span>
+              </label>
+
+              <label for="sms">
+                <input type="checkbox" id="sms">
+                <img src="assets/icons/box-unchecked.svg" class="checkbox-icon">
+                <span>Aceito Receber atualizações e promoções por SMS</span>
+              </label>
+            </fieldset>
+          </form>
+
+
+
+
+
     </div>
   </main>
 
