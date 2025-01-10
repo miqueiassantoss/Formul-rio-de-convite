@@ -1,10 +1,11 @@
 #contact-details {
   margin-top: 3rem;
 
-  span{
+  span:nth-child(1), span:nth-child(3){
     font: var(--body-sm);
     color: var(--text-body);
   }
+
 
   input {
     margin-block: 12px 8px;
@@ -27,8 +28,6 @@
     color: white;
   }
 }
-
-
 
 
 /* TERMOS */
@@ -72,7 +71,6 @@ input[type="checkbox"]:not(:checked) + img {
   input[type="checkbox"]:checked + img {
     content: url('../assets/icons/box-checked.svg');
   }
-
 
   #invitation-button {
     width: 177px;

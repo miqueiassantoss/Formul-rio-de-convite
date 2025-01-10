@@ -67,22 +67,28 @@
 
 .theme {
   height: 103px;
-  padding: 4px 4px 8px;
+  padding: 4px;
   justify-items: center; 
   background-color: var(---shape-button);
   border-radius: 8px;
   
+
+
+
   cursor: pointer;
   border: 1px solid #363B40;
   
-  transition: 0.1s linear;
+  transition: 0.2s linear;
 
   img {
     width: 126px;
+    height: 64px;
   }
 
   figcaption {
-    padding: 8px 4px;
+    
+    padding-block: 8px;
+    font: var(--body-sm);
   }
 }
 
@@ -208,3 +214,5 @@
 #select:hover {
   background-color: var(--shape-hover);
 }
+
+

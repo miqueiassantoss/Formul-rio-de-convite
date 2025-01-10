@@ -3,7 +3,7 @@
 }
 
 #first-section > h2 {
-  margin-bottom: 6.25rem;
+  margin-bottom: 40px;
   font: var(--heading-md);
   color: var(--text-heading);
 }
@@ -75,7 +75,10 @@ input[type="datetime-local"] {
 input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   display: none;
   -webkit-appearance: none;
-}
+} 
+
+
+
 
 .description {
   margin-top: 16px;

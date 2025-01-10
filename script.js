@@ -34,9 +34,6 @@ themeFunction.forEach((theme) => {
 
 
 
-
-
-
 document.querySelectorAll(".toggle-box input").forEach((input) => {
   input.addEventListener("change", () => {
     document.querySelectorAll(".toggle-box label").forEach((label) => {
@@ -48,6 +45,13 @@ document.querySelectorAll(".toggle-box input").forEach((input) => {
 
 
 
+const toggleButton = document.getElementById("toggle-button");
+const toggleText = document.getElementById("toggle-text");
 
-
-
+toggleButton.addEventListener("click", () => {
+  if (toggleText.textContent === "Claro") {
+    toggleText.textContent = "Escuro";
+  } else {
+    toggleText.textContent = "Claro";
+  }
+})

@@ -44,10 +44,7 @@ main {
   scrollbar-width: none;
   background-color: var(--shape-body);
   border-radius: 10px;
-}
-
-.container-main {
-  max-width: 35rem;
-  margin: auto;
+  padding-inline: 130px;
   padding-bottom: 80px;
 }
+
