@@ -1,3 +1,104 @@
+.custom {
+  margin-block: 50px 24px;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.custom p:nth-child(2) {
+  color: var(--text-heading);
+  font: var(--heading-sm);
+}
+
+.custom p:last-child {
+  margin-top: 24px;
+  flex-basis: 100%;
+}
+
+
+#colors-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.color {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  outline: 8px solid var(---shape-button);
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+}
+
+
+.color:hover {
+  outline: 8px solid var(--shape-hover);
+}
+
+
+.color.selected::after {
+  content: "";
+  position: absolute;
+  top: -8px; 
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 2px solid var(--brand-light); 
+  border-radius: 50%;
+  pointer-events: none; 
+}
+
+/* PARTE DOS TEMAS */
+
+#themes p {
+  margin-block: 38px 16px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-right: auto;
+}
+
+#themes {
+  display: grid;
+  grid-template-columns: repeat(4, 134px);
+  gap: 8px;
+}
+
+.theme {
+  height: 103px;
+  padding: 4px 4px 8px;
+  justify-items: center; 
+  background-color: var(---shape-button);
+  border-radius: 8px;
+  
+  cursor: pointer;
+  border: 1px solid #363B40;
+  
+  transition: 0.1s linear;
+
+  img {
+    width: 126px;
+  }
+
+  figcaption {
+    padding: 8px 4px;
+  }
+}
+
+.theme:hover {
+  background-color: var(--shape-hover);
+}
+
+
+.card-checked {
+  border: 2px solid var(--brand-light);
+}
+
+
+
+/* PARTE DO MODE DARK/LIGHT E FOTO DE CAPA */
+
 #mode {
   margin-top: 1.75rem;
   display: flex;
@@ -95,7 +196,7 @@
   background-color: var(---shape-button);
   border-radius: 8px;
   padding: 12px;
-  cursor: ponit;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 
   img {

@@ -1,0 +1,101 @@
+#contact-details {
+  margin-top: 3rem;
+
+  span{
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  input {
+    margin-block: 12px 8px;
+  }
+
+  small {
+    display: flex;
+    color: var(--danger);
+    font: var(--body-xs);
+    gap: 8px;
+    img {
+      height: 16px;
+      width: 16px;
+    }
+  }
+
+  input[type="text"]{
+    border: 1px solid var(--danger);
+    outline: none;
+    color: white;
+  }
+}
+
+
+
+
+/* TERMOS */
+
+#terms {
+  display: flex;
+  flex-direction: column;
+  
+  img {
+    width: 16px;
+    height: 16px;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* font: var(--body-sm); */
+    font-weight: 800;
+
+    strong {
+      color: var(--brand-light);
+      text-decoration: underline;
+
+    }
+  }
+
+  input[type="checkbox"] {
+    display: none;
+    transition:  0.3s ease;
+  }
+  
+}
+
+input[type="checkbox"]:not(:checked) + img {
+    content: url('../assets/icons/box-unchecked.svg');
+    transition: opacity 0.3s ease;
+  }
+
+  /* Estilo para a imagem quando o checkbox está marcado */
+  input[type="checkbox"]:checked + img {
+    content: url('../assets/icons/box-checked.svg');
+  }
+
+
+  #invitation-button {
+    width: 177px;
+    height: 48px;
+    background-color: var(--brand-dark);
+    border-radius: 8px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 48px;
+    gap: 12px;
+    cursor: default;
+    
+    &:hover {
+      background-color: var(--brand-mid);
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  

@@ -15,19 +15,23 @@
 <body>
   <div id="app">
     <aside class="aside-container">
-          <div class="content-container">
-            <img  class="back-color" src="./assets/images/Logo.svg" alt="">
-            <h1>Festivite</h1>
-            <p>Crie um convite digital para o seu evento</p>
-          </div>
-          <img src="./assets/images/Background.png" />
+      <img src="assets/images/Background.png" class="background-img">
+        <div class="content-aside">
+          <img src="./assets/images/Logo.svg">
+          <h1>Festivite</h1>
+          <p>Crie um convite digital para o seu evento</p>
+        </div>
     </aside>
+
+
+
     <main>
-      <div class="main-container">
+      <!--PRIMEIRA SECTION-->
+      <section id="first-section" class="container-main">
         <h2>Crie Seu convite</h2>
         <form method="post">
               <legend> 
-                  <img src="./assets/icons/calendar.svg"   alt="calendário">
+                  <img src="./assets/icons/calendar.svg" alt="calendário">
                   <span>Sobre o Evento</span>
               </legend>
 
@@ -52,24 +56,21 @@
 
 
               <div class="flex">
-
-                  <div class="flex-2">
-                    <label for="inicio">Tipo</label>
-
-                      <div class="toggle-box">
-                        <input type="radio" id="presencial" name="mode" value="presencial" checked>
-                        <label for="presencial" class="selected">
-                          
-                          <img src="./assets/icons/building.svg" alt="">
-                          <p>Presencial</p>
-                        </label>
+                <div class="flex-2">
+                  <label for="inicio">Tipo</label>
+                  <div class="toggle-box">
+                    <input type="radio" id="presencial" name="mode" value="presencial" checked>
+                      <label for="presencial" class="selected">
+                        <img src="./assets/icons/building.svg" alt="">
+                        <p>Presencial</p>
+                      </label>
                         
-                        <input type="radio" id="online" name="mode" value="Online">
-                        <label for="online">
-                          <img src="./assets/icons/camera.svg" alt="">
-                          <p>Online</p>
-                        </label>
-                      </div>
+                      <input type="radio" id="online" name="mode" value="Online">
+                      <label for="online">
+                        <img src="./assets/icons/camera.svg" alt="">
+                        <p>Online</p>
+                      </label>
+                </div>
                 </div>
 
 
@@ -108,72 +109,71 @@
               </section>
         </form>
 
-        <section id="themes">
-              <p>Tema do evento</p>
+        <div id="themes">
+          <p>Tema do evento</p>
+          <figure class="theme">
+            <img src="assets/images/birthday.png">
+            <figcaption>Aniversário</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/birthday.png">
-                <figcaption>Aniversário</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/birthday-child.png">
+            <figcaption>Infantil</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/birthday-child.png">
-                <figcaption>Infantil</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/graduation.png">
+            <figcaption>Formatura</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/graduation.png">
-                <figcaption>Formatura</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/marriage.png">
+            <figcaption>Casamento</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/marriage.png">
-                <figcaption>Casamento</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/baby-shower.png">
+            <figcaption>Chá de bebê</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/baby-shower.png">
-                <figcaption>Chá de bebê</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/bridal-shower.png">
+            <figcaption>Chá de panela</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/bridal-shower.png">
-                <figcaption>Chá de panela</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/carnival.png">
+            <figcaption>Carnaval</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/carnival.png">
-                <figcaption>Carnaval</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/easter.png">
+            <figcaption>Páscoa</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/easter.png">
-                <figcaption>Páscoa</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/sao-joao.png">
+            <figcaption>São João</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/sao-joao.png">
-                <figcaption>São João</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/halloween.png">
+            <figcaption>Halloween</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/halloween.png">
-                <figcaption>Halloween</figcaption>
-              </figure>
+          <figure class="theme">
+            <img src="assets/images/christmas.png">
+            <figcaption>Natal</figcaption>
+          </figure>
 
-              <figure class="theme">
-                <img src="assets/images/christmas.png">
-                <figcaption>Natal</figcaption>
-              </figure>
-
-              <figure class="theme">
-                <img src="assets/images/another.png">
-                <figcaption>Outro</figcaption>
-              </figure>
-
-        </section>
-
-        <section id="mode">
+          <figure class="theme">
+            <img src="assets/images/another.png">
+            <figcaption>Outro</figcaption>
+          </figure>
+        </div>
+      </section>
+      
+      <section id="mode" class="container-main">
 
           <div id="style-mode">
             <label for="toggle-button">
@@ -194,9 +194,8 @@
               </div>
               <span>Nenhum arquivo selecionado</span>
           </div>
-        </section>
-
-        <section id="contact-details">
+      </section>
+      <section id="contact-details" class="container-main">
           <form action="POST">
             <legend>
               <img src="assets/icons/contact.svg">
@@ -244,14 +243,16 @@
                 <span>Aceito Receber atualizações e promoções por SMS</span>
               </label>
             </fieldset>
+
+            <div id="invitation-button">
+              <img src="assets/icons/ticket.svg">
+              <span>Gerar convite</span>
+            </div>
           </form>
+      </section>
+    </main>
 
 
-
-
-
-    </div>
-  </main>
 
 
   <script src="script.js"></script>

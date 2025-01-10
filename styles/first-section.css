@@ -1,4 +1,8 @@
-.main-container > h2{
+#first-section {
+  margin-top: 5rem;
+}
+
+#first-section > h2 {
   margin-bottom: 6.25rem;
   font: var(--heading-md);
   color: var(--text-heading);
@@ -29,7 +33,9 @@ label {
   margin-bottom: 12px;
 }
 
- input[type="text"], input[type="email"], input[type="tel"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
   width: 100%;
   height: 48px;
   padding-left: 16px;
@@ -39,7 +45,6 @@ label {
   font: var(--body-md);
   color: white;
 }
-
 
 .input-wrapper input:focus {
   outline: none; /* Remove a linha de contorno */
@@ -51,15 +56,11 @@ label {
   border: 1px solid var(--brand-light); /* Borda visível */
 }
 
-
-
-
-
 input[type="text"]::placeholder {
   color: var(--input-placeholder);
 }
 
- input[type="datetime-local"] {
+input[type="datetime-local"] {
   width: 100%;
   height: 48px;
   padding-left: 16px;
@@ -80,7 +81,53 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   margin-top: 16px;
 }
 
-
 .description > input {
   height: 8.5rem;
+}
+
+/*ESTILOS DO INPUT PRESENCIAL/ONLINE */
+
+.toggle-box {
+  margin-top: 12px;
+  display: flex;
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 48px;
+  padding: 3px;
+}
+
+.toggle-box input {
+  display: none;
+}
+
+.toggle-box label {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  gap: 8px;
+}
+
+.toggle-box input:checked + label {
+  background-color: #2d3136;
+  color: white;
+}
+
+.toggle-box label img {
+  filter: grayscale(
+    100%
+  ); /* Ícones não selecionados ficam em escala de cinza */
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.toggle-box label.selected img {
+  filter: grayscale(
+    0%
+  ); /* Remove o efeito de escala de cinza no ícone selecionado */
+  transform: scale(1.1); /* Opcional: aumenta o ícone selecionado */
 }

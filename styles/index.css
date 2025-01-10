@@ -1,11 +1,5 @@
 @import url(global.css);
-@import url(aside.css);
 @import url(layout.css);
-@import url(forms.css);
-@import url(./fields/index.css);
-@import url(colors.css);
-@import url(slider.css);
-@import url(theme.css);
-@import url(mode.css);
-@import url(contact-section.css);
-@import url(terms.css);
+@import url(first-section.css);
+@import url(second-section.css);
+@import url(third-section.css);

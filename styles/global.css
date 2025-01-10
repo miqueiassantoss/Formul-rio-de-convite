@@ -51,11 +51,10 @@
 }
 
 body {
-  overflow: hidden;
   font: var(--body-md);
   color: var(--text-body);
   background-color: var(--input-base);
-  padding: 20px;
+  /* margin: 20px; */
 }
 
 .flex {
@@ -122,7 +121,3 @@ body {
   background-color: var(--input-stroke);
   margin-block: 48px 40px;
 }
-
-
-
-
